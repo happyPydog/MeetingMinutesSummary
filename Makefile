@@ -4,8 +4,7 @@ test:
 	python -m pytest tests
 
 install:
-	pip install -r requirements.txt
-	pip install -r requirements-dev.txt
+	poetry install --no-root
 
 init:
 	@if [ ! -d ".venv" ]; then \

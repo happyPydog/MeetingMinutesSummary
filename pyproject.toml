@@ -1,27 +1,16 @@
-[metadata]
-name = "<project_name>"
-author = "happyPydog"
-url = "https://github.com/happyPydog/<project_name>"
+[tool.poetry]
+name = "meetingminutessummary"
+version = "0.1.0"
+description = "Summary meeting notes"
+authors = ["ryker_chang <ryker_chang@trendmicro.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.14.1"
+python-dotenv = "^1.0.1"
+
 
 [build-system]
-requires = [
-    "setuptools",
-    "wheel",
-]
-
-[tool.black]
-line-length = 120
-
-[tool.flake8]
-max-line-length = 120
-exclude = [
-    "tests",
-    ".venv",
-]
-
-[tool.istor]
-lines-after-import = 2
-
-[tool.mypy]
-ignore_missing_imports = true
-show_error_codes = true
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
